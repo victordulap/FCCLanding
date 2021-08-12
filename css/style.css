@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap");
+/* reset styles*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* end reset styles */
+.wrapper {
+  background-color: #eee;
+  width: 100%;
+}
+
+@media screen and (min-width: 1020px) {
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+#header {
+  position: fixed;
+  background-color: #eee;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header .logo {
+  max-width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#header .logo img {
+  max-width: 50%;
+}
+
+#header nav {
+  text-align: center;
+  font-weight: 400;
+}
+
+#header nav li {
+  margin: 10px 0;
+}
+
+#header nav li .nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 601px) {
+  #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header .logo {
+    width: 60%;
+  }
+  #header nav {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  #header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 0;
+  }
+  #header .logo {
+    text-align: left;
+  }
+  #header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.btn {
+  background-color: #f1c40f;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.hero {
+  margin: 150px 0 50px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  padding: 2rem;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.hero form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero form .form-group input {
+  font-size: 1.6rem;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.hero form .form-group .btn {
+  font-weight: bold;
+}
+
+.benefits-section {
+  text-align: center;
+  line-height: 1.25;
+}
+
+.benefits-section .benefit-icon {
+  display: none;
+}
+
+.benefits-section li {
+  margin: 50px 0;
+}
+
+.benefits-section li h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.benefits-section li p {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 551px) {
+  .benefits-section {
+    text-align: left;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .benefits-section li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px 30px 0;
+  }
+  .benefits-section li .benefit-icon {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 25px;
+  }
+  .benefits-section li .benefit-icon i {
+    font-size: 6rem;
+    color: #ff875c;
+  }
+  .benefits-section li .benefit-text {
+    display: block;
+  }
+}
+
+.video-section {
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-section {
+  margin: 75px 0 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-section .product {
+  border: 1px solid #222;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.product-section .product-header {
+  background-color: #ddd;
+  font-size: 2rem;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product-section .product-body {
+  margin: 15px 0;
+}
+
+.product-section .product-price {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 10px 0;
+}
+
+.product-section .product-description {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.product-section .product-footer {
+  margin: 15px 0;
+}
+
+.product-section .product-footer .btn {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 801px) {
+  .product-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .product-section .product {
+    margin: 0 10px;
+  }
+}
+
+footer {
+  background-color: #ddd;
+  text-align: right;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 20px;
+}
+
+footer .copy-right {
+  color: #666;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+footer nav ul li {
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=style.css.map */
